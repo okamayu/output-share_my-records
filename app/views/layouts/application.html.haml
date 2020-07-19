@@ -9,7 +9,7 @@
   %body
     %header.header
       .header__title
-        = link_to "OurPut-share!", root_path, class: "header__title--text"
+        = link_to "OutPut-share!", posts_path, class: "header__title--text"
       .header__right
         - if user_signed_in?
           .icons
@@ -19,6 +19,9 @@
             .icon-plane
               .fas.fa-paper-plane
                 = link_to "新規投稿", new_post_path, class: "header__right--btn"
+            .icon-records
+              .fas.fa-paper-plane
+                = link_to "記録ページ", records_path, class: "header__right--btn"
             .icon-signout
               .fas.fa-sign-out-alt
                 = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn"

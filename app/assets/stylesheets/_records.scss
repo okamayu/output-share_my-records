@@ -1,0 +1,27 @@
+.kakomi-tape1 {
+  position: relative;
+  margin: 3em auto;
+  padding: 35px 20px 15px;
+  width: 60%; /*ボックス幅*/
+  color: #555555; /* 文字色 */
+  background-color: #E6E6FA; /*背景色*/
+  box-shadow: 0 2px 2px #ccc; /* 影 */
+  
+}
+.kakomi-tape1::before {
+  position: absolute;
+  top: -1.5em;
+  left: 35%;
+  height: 40px;
+  width: 160px; /*テープの幅*/
+  content: "";
+  border: 1px solid #ccc; /*枠太さ・色*/
+  background-color: #FFF; /*テープ色*/
+  opacity: 0.3; /*テープ透明度0～1*/
+  transform: rotate( -5deg ); /*テープ角度*/
+}
+
+
+.record-edit-btn{
+  color: #EFCBC1;
+}
