@@ -2,7 +2,7 @@ body{
   background-color: #f6f6f6;
   min-width: 650px;
   .header{
-    height: 56px;
+    height: 80px;
     width: 100%;
     padding: 0 150px;
     background-color: rgb(233, 149, 163);
@@ -11,7 +11,7 @@ body{
     justify-content: space-between;
     &__title{
       font-size: 30px;
-      line-height: 56px;
+      line-height: 80px;
       &--text{
         text-decoration: none;
         color: #fff;
@@ -20,28 +20,52 @@ body{
     &__right{
       &--btn{
         text-decoration: none;
-        line-height: 56px;
+        line-height: 80px;
         color: #fff;
-        margin-left:15px;
+        // margin-left:15px;
       }
     }
+    .icons2{
+      display:flex;
+      margin-left: 30px;
+    }
+    .icon-signup{
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-right: 10px;
+    }
+    .icon-login{
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-right: 10px;
+    }
+  }
+  .icons{
+    display:flex;
+    margin-left: 30px;
+  }
+  .icon-user{
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  .icon-plane{
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  .icon-signout{
+    margin-left: 30px;
+    margin-right: 10px;
   }
   .contents{
     margin: 30px auto 0;
     height: 600px;
-    width: 70%;
-    overflow: scroll;
+    width: 50%;
     .content{
       padding: 10px;
       border-bottom: 1px solid #f6f6f6;
       display: flex;
       &__left{
         padding-right: 20px;
-        &--image{
-          height: 55px;
-          width: 55px;
-          border: solid 1px;
-        }
       }
       &__right{
         width: calc(100%-100px);
@@ -58,13 +82,19 @@ body{
           color: #999;
           display: flex;
           &--userName{
+            display:flex;
+            list-style: none;
+            margin-left: 10px;
             &--btn{
               text-decoration: none;
               color: #999;
             }
           }
           &--date{
-            margin-left: 20px;
+            margin-left: 440px;
+            margin-top: 20px;
+            color: gray;
+            font-size: 10px;
           }
         }
       }
@@ -182,3 +212,35 @@ body{
   margin: 0; 
   padding: 0;
 }
+.pagination{
+  a{
+    color: black;
+    text-decoration: none;
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
