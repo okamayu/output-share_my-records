@@ -5,7 +5,6 @@ body{
     height: 80px;
     width: 100%;
     padding: 0 150px;
-    background-color: rgb(233, 149, 163);
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -22,7 +21,6 @@ body{
         text-decoration: none;
         line-height: 80px;
         color: #fff;
-        // margin-left:15px;
       }
     }
     .icons2{
@@ -183,7 +181,7 @@ body{
   position: relative;
   margin: 2em 0 2em 40px;
   padding: 15px;
-  background: #EFCBC1;
+  background: whitesmoke;
   border-radius: 30px;
 }
 
@@ -194,7 +192,7 @@ body{
   width: 13px;
   height: 12px;
   bottom: 0;
-  background: #EFCBC1;
+  background: whitesmoke;
   border-radius: 50%;
 }
 
@@ -205,7 +203,7 @@ body{
   width: 20px;
   height: 18px;
   bottom: 3px;
-  background: #EFCBC1;
+  background: whitesmoke;
   border-radius: 50%;
 }
 .content p {

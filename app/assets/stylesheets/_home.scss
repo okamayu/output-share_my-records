@@ -1,0 +1,32 @@
+body {
+  background-color: #eeaa7b;
+  animation: bg-color 10s infinite;
+  -webkit-animation: bg-color 10s infinite;
+  overflow: hidden;
+
+}
+@-webkit-keyframes bg-color {
+  0% { background-color: #eeaa7b; }
+  30% { background-color: #66b9bf; }
+  60% { background-color: #07889b; }
+  90% { background-color: #e37222; }
+}
+@keyframes bg-color {
+  0% { background-color: #eeaa7b; }
+  30% { background-color: #66b9bf; }
+  60% { background-color: #eeaa7b; }
+  90% { background-color: #e37222; }
+  
+}
+
+.message1 {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3",sans-serif;
+  font-size: 40px;
+  color: #fff;
+
+}
+.message2{
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3",sans-serif;
+  color: #fff;
+ 
+}
