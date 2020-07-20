@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :posts, except: :index
   resources :users, only: :show
   get 'records', to: 'records#index'
+  get 'records/new', to: 'records#new'
+  post 'records', to: 'records#create'
+  resources :records, only: [:index, :new, :create, :show, :edit, :update, :destroy]
 end

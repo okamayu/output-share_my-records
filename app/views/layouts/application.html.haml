@@ -9,7 +9,7 @@
   %body
     %header.header
       .header__title
-        = link_to "OutPut-share!", posts_path, class: "header__title--text"
+        = link_to "OutPut-share!", root_path, class: "header__title--text"
       .header__right
         - if user_signed_in?
           .icons
@@ -19,19 +19,22 @@
             .icon-plane
               .fas.fa-paper-plane
                 = link_to "新規投稿", new_post_path, class: "header__right--btn"
+            .icon-post
+              .fas.fa-sticky-note
+                = link_to "投稿一覧", posts_path, class: "header__right--btn"
             .icon-records
-              .fas.fa-paper-plane
-                = link_to "記録ページ", records_path, class: "header__right--btn"
+              .fas.fa-pen-alt
+                = link_to "記録一覧", records_path, class: "header__right--btn"
             .icon-signout
               .fas.fa-sign-out-alt
-                = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn"
+                = link_to "Log out", destroy_user_session_path, method: :delete, class: "header__right--btn"
         - else
           .icons2
             .icon-login
               .fas.fa-sign-in-alt
-            = link_to "ログイン", new_user_session_path, class: "header__right--btn"
+                = link_to "Log in", new_user_session_path, class: "header__right--btn"
             .icon-signup
               .fas.fa-user-plus
-            = link_to "新規登録", new_user_registration_path, class: "header__right--btn"
+                = link_to "Sign up", new_user_registration_path, class: "header__right--btn"
     .contents
       = yield

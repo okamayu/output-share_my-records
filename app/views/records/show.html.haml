@@ -1,0 +1,15 @@
+.record
+  .record-content
+    《問題点・解決したいこと》
+    %br/
+    = @record.content1
+  .record-content
+    《調べたこと・仮説》
+    %br/
+    = @record.content2
+  .record-content
+    《結果・学んだこと》
+    %br/
+    = @record.content3
+  .record-date
+    記録日：#{@record.created_at}
