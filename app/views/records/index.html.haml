@@ -1,53 +1,22 @@
--# %h2= link_to '記録する', '/records/new'
+.record-link
+  = link_to '記録する', '/records/new'
 .records-content
   - @records.each do |record|
-    .record
-      -# .record-edit-btn
-      -#   = link_to record.content1, record_path(record.id), class: "record-edit-btn"
-      .kakomi-tape1
-        .record-content
-          《問題点・解決したいこと》
-          %br/
-          = record.content1
-        .record-content
-          《調べたこと・仮説》
-          %br/
-          = record.content2
-        .record-content
-          《結果・学んだこと》
-          %br/
-          = record.content3
-        .record-date
-          記録日：#{record.created_at}
--# %html{'ng-app' => 'calendarApp', 'ng-cloak' => 'true'}
-
--# -@days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-
--# .calendar{'ng-controller' => 'calendarController as calendar'}
--# .calendar_left
--#   .header
--#     %i{'class' => 'material-icons', 'ng-click' => 'calendar.prev()'} navigate_before
--#     %h1 {{calendar.month}}
--#     %i{'class' => 'material-icons', 'ng-click' => 'calendar.next()'} navigate_next
--#   .days
--#     -@days.each do |days, index|
--#       .day_item #{days}
--#   .dates
-  
--# .calendar_right
-  
--#   .list
-  
--#     %ul
-    
--#       %li{'ng-repeat' => 'events in calendar.events', 'ng-show' => 'events.id === calendar.dataId', 'class' => 'bounce-in'}
-      
--#         %span{'class' => 'type'} It's a {{ events.type }} thing -
-        
--#         %span{'class' => 'description'} {{ events.description }}
-  
--#   %form{'ng-submit' => 'calendar.add()'}
--#     %input{'type' => 'text', 'placeholder' => 'Enter a task for this day', 'ng-model' => 'calendar.description'}
--#       %select{'placeholder' => 'calendar.type', 'ng-model' => 'calendar.type'}
--#         %option{'value' => 'Social'} Social
--#         %option{'value' => 'Work'} Work
+    .kakomi-tape1
+      .record-content
+        《問題点・解決したいこと》
+        %br/
+        = record.content1
+      .record-content
+        《調べたこと・仮説》
+        %br/
+        = record.content2
+      .record-content
+        《結果・学んだこと》
+        %br/
+        = record.content3
+      .record-date
+        記録日：#{record.created_at}
+      .record-link2
+        = link_to '編集', "/records/#{record.id}/edit"
+        = link_to '削除', "/records/#{record.id}/", method: :delete

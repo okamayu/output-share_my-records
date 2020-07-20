@@ -9,24 +9,49 @@ body {
   0% { background-color: #eeaa7b; }
   30% { background-color: #66b9bf; }
   60% { background-color: #07889b; }
-  90% { background-color: #e37222; }
+  90% { background-color:rgb(216, 154, 165); }
 }
 @keyframes bg-color {
   0% { background-color: #eeaa7b; }
   30% { background-color: #66b9bf; }
   60% { background-color: #eeaa7b; }
-  90% { background-color: #e37222; }
+  90% { background-color: rgb(216, 154, 165); }
   
 }
+.header__title{
+  border-radius: 50%;
+  transition: all 0.6s ease 0s;
+}
+.header__title:hover{
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
 
+.context{
+  margin-top: 200px;
+
+}
 .message1 {
+  text-align: left;
   font-family: Meiryo, "Hiragino Kaku Gothic Pro W3",sans-serif;
   font-size: 40px;
   color: #fff;
 
 }
 .message2{
+  text-align: left;
   font-family: Meiryo, "Hiragino Kaku Gothic Pro W3",sans-serif;
   color: #fff;
  
+}
+.header__title{
+  a{
+    font-size: 50px;
+  }
+}
+.context{
+  color:rgb(243, 132, 132);
+  padding: 0.5em 0;
+  border-top: solid 3px rgb(243, 132, 132);
+  border-bottom: solid 3px rgb(243, 132, 132);
 }
