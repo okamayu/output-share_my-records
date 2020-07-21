@@ -119,7 +119,7 @@ body{
         }
         &__bottom{
           font-size: 15px;
-          color: #999;
+          color: black;
           display: flex;
           &--userName{
             display:flex;
@@ -131,7 +131,7 @@ body{
             }
           }
           &--date{
-            margin-left: 440px;
+            margin-left: 400px;
             margin-top: 20px;
             color: gray;
             font-size: 10px;
@@ -151,6 +151,7 @@ body{
       font-size: 15px;
       color: #999;
       text-align: center;
+
     }
     .postAuthor{
       font-size: 15px;
@@ -160,6 +161,7 @@ body{
     .postManage{
       display: flex;
       justify-content:space-evenly;
+      margin-top: 220px;
       &__edit{
         display: block;
         border-radius: 50px;
@@ -307,4 +309,21 @@ body{
 .form__btn:hover {
   box-shadow    : none;
   opacity       : 0.8;
+}
+li.icon-likes{
+  list-style: none;
+  margin-left: 35px;
+
+}
+ul#likeBtn{
+  margin-top: 200px;
+  margin-left: 300px;
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color:red;
+  }
 }

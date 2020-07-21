@@ -8,5 +8,9 @@
     .postManage
       = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
       = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
+  - else
+    - if user_signed_in?
+      %ul#likeBtn
+        = render partial: 'likes/like', locals: { user: @user}
   .postDate
     = @post.created_at
