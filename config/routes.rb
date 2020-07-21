@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get 'records/new', to: 'records#new'
   post 'records', to: 'records#create'
   resources :records, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+  post '/likes/:post_id' => 'likes#create'
+  delete '/likes/:post_id/:user_id' => 'likes#destroy'
 end

@@ -5,10 +5,13 @@
       .content__right__top
         = link_to post.title, post_path(post.id), class: "content__right__top--title"
       .content__right__bottom
-      .content__right__bottom--userName
-        %li.icon
-          .fas.fa-user
-        = post.user.nickname
-        .content__right__bottom--date
-          = post.created_at
+        .content__right__bottom--userName
+          %li.icon
+            .fas.fa-user
+          = post.user.nickname
+          %li.icon-likes
+            .fas.fa-heart
+              = post.likes.count
+          .content__right__bottom--date
+            = post.created_at
 = paginate(@posts)

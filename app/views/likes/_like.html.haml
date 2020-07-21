@@ -1,0 +1,11 @@
+.like-btn
+  - if Like.find_by(user_id: current_user.id, post_id: @post.id)
+    = link_to "/likes/#{@post.id}/#{current_user.id}", method: :delete, remote: true do
+      %li.optionalBtn.already
+        = icon('fa', 'heart')
+        いいね！済み
+  -else 
+    = link_to "/likes/#{@post.id}", method: :post, remote: true do
+      %li.optionalBtn.none
+        = icon('fa', 'heart')
+        いいね！
