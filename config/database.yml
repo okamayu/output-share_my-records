@@ -52,3 +52,6 @@ production:
   database: output-share_my-records_production
   username: output-share_my-records
   password: <%= ENV['OUTPUT-SHARE_MY-RECORDS_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
