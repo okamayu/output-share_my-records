@@ -1,4 +1,5 @@
 ## アプリ名：OutPut-share!
+
 ## 概要
 ### 自身の思考をアウトプットし記録、整理することを助けるツールです。また学びを仲間と共有することでお互いを高め会うことができます。
 
@@ -23,13 +24,17 @@
 ## DEMO
 ### ![トップページ](https://user-images.githubusercontent.com/65394649/88452991-1c1c6900-ce9e-11ea-9218-97692b1dbaf1.png)
 ### ![記録ページ](https://user-images.githubusercontent.com/65394649/88453049-ad8bdb00-ce9e-11ea-8d0f-d86eda9251f7.png)
-### ![共有ページ](https://user-images.githubusercontent.com/65394649/88453021-75849800-ce9e-11ea-9c1e-865660703b4a.png)
+### ![共有ページ](https://user-images.githubusercontent.com/65394649/88453189-bc26c200-ce9f-11ea-83c1-9a125a01cec5.png)
+
 ## 工夫したポイント
 ### いいね機能にはajaxを使用、ビューもユーザーが直感的に操作しやすいつくりにしました。
+
 ## 使用技術(開発環境)
 ### Haml,Scss,Ruby on Rails,ajax
+
 ## 課題や今後実装したい機能
 ### 今後アウトプットした記録事項を振り返れるようカレンダーを取り入れた機能も実装したいです。
+
 # DB設計
 ## users table
 |Column|Type|Options|
